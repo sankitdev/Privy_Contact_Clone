@@ -1,0 +1,17 @@
+@media (max-width: 450px) {
+    #title {
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 250px) {
+    #title {
+        margin-top: 20px;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+}
