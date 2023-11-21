@@ -337,9 +337,26 @@ input[type="checkbox"] {
 }
 
 .footer a {
-    font-size: 0.85rem;
-    line-height: 2.5;
+    font-size: 0.9rem;
+    line-height: 2.9;
     letter-spacing: 0.5px;
     color: rgb(91, 89, 89);
+    position: relative;
+    padding-bottom: 1px;
 }
 
+.footer a::after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 3px solid var(--primary-color);
+    position: absolute;
+    bottom: -5px;
+    right: 0%;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.footer a:hover::after {
+    width: 100%;
+    left: 0;
+}
