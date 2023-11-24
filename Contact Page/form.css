@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +14,7 @@ body {
     background-position: center center;
 }
 
+/* Form Container */
 .form-container {
     display: flex;
     justify-content: center;
@@ -24,9 +24,9 @@ body {
     background-color: white;
     margin-right: 250px;
     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, .15);
-
 }
 
+/* Form Labels */
 .form-container label {
     display: block;
     font-size: 14px;
@@ -34,7 +34,9 @@ body {
     font-weight: 500;
 }
 
-.form-container input {
+/* Form Inputs */
+.form-container input,
+.form-container textarea {
     width: 88%;
     margin-bottom: 12px;
     border-radius: 8px;
@@ -43,6 +45,7 @@ body {
     padding: 15px 10px;
 }
 
+/* Form Name Inputs */
 #first-name-label,
 #last-name-label {
     display: inline-block;
@@ -54,9 +57,9 @@ body {
     display: inline-block;
     width: 43%;
     margin-right: 5px;
-    /* Adjust the width as needed */
 }
 
+/* Form Submit Button */
 .submit-button {
     display: block;
     border: none;
@@ -68,25 +71,28 @@ body {
     border-radius: 5px;
 }
 
+/* Form Textarea */
 #text-box {
     background-color: rgb(236, 236, 236);
     border: 2px solid rgba(228, 224, 243, 255);
     width: 88%;
-    /* margin-left: 5px; */
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
+/* Form Container Margin */
 .form {
     margin: 0px 0px 10px 25px;
 }
 
+/* Form Focus Styles */
 input:focus,
 textarea:focus {
     outline: none;
     border: 1px solid rgba(173, 27, 224, 255);
 }
 
+/* Email Input Margin */
 input[type="email"] {
     margin-top: 1px;
 }

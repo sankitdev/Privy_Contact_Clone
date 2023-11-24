@@ -1,0 +1,378 @@
+/* Common styles for all screen sizes */
+.navbar img {
+  position: relative;
+}
+
+/* Large screens (1251px to 1400px) */
+@media only screen and (min-width: 1251px) and (max-width: 1400px) {
+  .navbar img {
+    right: 280px;
+  }
+
+  .navbar>.left-side {
+    right: 250px;
+  }
+
+  .navbar>.left-side>ul>li {
+    padding: 16px 12px;
+  }
+
+  .header-button {
+    margin-right: 30px;
+  }
+
+  .main-container {
+    flex-wrap: nowrap;
+  }
+
+  .main-container>.text-container h3 {
+    top: 260px;
+  }
+
+  .main-container>.text-container p {
+    bottom: 10px;
+  }
+
+  .form-container {
+    margin-right: 150px;
+  }
+}
+
+/* Medium screens (1097px to 1250px) */
+@media only screen and (min-width: 1097px) and (max-width: 1250px) {
+  .navbar {
+    overflow-x: hidden;
+  }
+
+  .navbar img {
+    right: 150px;
+  }
+
+  .navbar>.left-side {
+    right: 130px;
+  }
+
+  .navbar>.left-side>ul>li {
+    padding: 16px 12px;
+  }
+
+  .header-button {
+    margin-right: 160px;
+  }
+
+  .form-container {
+    margin-right: 120px;
+    width: 500px;
+  }
+
+  .main-container>.text-container h3 {
+    top: 260px;
+    left: 140px;
+  }
+
+  .main-container>.text-container p {
+    bottom: 10px;
+    right: 100px;
+  }
+
+  .second {
+    height: 950px;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fourth {
+    flex-direction: column;
+    height: 980px;
+  }
+
+  .fourth .second-form,
+  .social-media {
+    margin: auto;
+  }
+
+  input[type="email"] {
+    margin-top: 13px;
+    padding: 18px;
+    width: 800px;
+  }
+
+  .second-form label {
+    font-size: 12px;
+    max-width: 75ch;
+  }
+
+  .fourth-button {
+    width: 800px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    margin: 0px 176px;
+  }
+}
+
+/* Small screens (992px to 1096px) */
+@media only screen and (min-width: 992px) and (max-width: 1096px) {
+  .navbar {
+    overflow: hidden;
+  }
+
+  .navbar img {
+    right: 10px;
+  }
+
+  .navbar>.left-side {
+    right: 10px;
+  }
+
+  .navbar>.left-side>ul>li {
+    padding: 16px 12px;
+  }
+
+  .header-button {
+    margin-right: 290px;
+  }
+
+  .form-container {
+    margin-right: 115px;
+    width: 500px;
+  }
+
+  .main-container>.text-container h3 {
+    top: 260px;
+    left: 140px;
+  }
+
+  .main-container>.text-container p {
+    bottom: 10px;
+    right: 108px;
+  }
+
+  .second {
+    height: 930px;
+  }
+
+  .box {
+    width: 250px;
+    height: 300px;
+  }
+
+  .fourth {
+    flex-direction: column;
+    height: 880px;
+  }
+
+  .fourth .second-form,
+  .social-media {
+    margin: auto;
+  }
+
+  input[type="email"] {
+    margin-top: 13px;
+    padding: 18px;
+    width: 800px;
+  }
+
+  .second-form label {
+    font-size: 12px;
+    max-width: 75ch;
+  }
+
+  .fourth-button {
+    width: 800px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    margin: 0px 176px;
+  }
+}
+
+/* Extra small screens (up to 992px) */
+@media only screen and (max-width: 992px) {
+  .navbar img {
+    position: relative;
+    left: -250px;
+  }
+
+  .navbar .fa-bars {
+    display: block;
+    font-size: 26px;
+    position: relative;
+    left: 250px;
+  }
+
+  .main-container>.text-container h3 {
+    top: 260px;
+    left: 150px;
+  }
+
+  .main-container>.text-container p {
+    bottom: 10px;
+    right: 90px;
+  }
+
+  .form-container {
+    border: 2px solid red;
+    margin-right: 10px;
+    width: 615px;
+  }
+
+  .left-side,
+  .right-side,
+  ul,
+  li {
+    display: none;
+  }
+
+  .second {
+    height: 950px;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fourth {
+    flex-direction: column;
+    height: 480px;
+  }
+
+  .fourth .second-form,
+  .social-media {
+    margin: auto;
+  }
+
+  input[type="email"] {
+    margin-top: 13px;
+    padding: 18px;
+    width: 400px;
+  }
+
+  .second-form label {
+    font-size: 12px;
+    max-width: 75ch;
+  }
+
+  .fourth-button {
+    width: 400px;
+  }
+
+  .fourth {
+    height: 880px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    margin: 0px 176px;
+  }
+}
+
+/* Extra, extra small screens (up to 638px) */
+@media only screen and (max-width: 638px) {
+  .main {
+    overflow: none;
+    width: 100%;
+  }
+
+  .navbar img {
+    left: -90px;
+  }
+
+  .form-container {
+    margin-right: 200px;
+    margin-top: 1050px;
+    width: 600px;
+  }
+
+  .main-container>.text-container h3 {
+    top: 200px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .main-container>.text-container p {
+    bottom: 50px;
+    max-width: 100ch;
+    box-sizing: border-box;
+    border: 2px solid red;
+  }
+
+  .navbar .fa-bars {
+    display: block;
+    font-size: 26px;
+    position: relative;
+    left: 150px;
+  }
+
+  .left-side,
+  .right-side,
+  ul,
+  li {
+    display: none;
+  }
+
+  .second {
+    height: 950px;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+
+  .fourth {
+    flex-direction: column;
+    height: 880px;
+  }
+
+  .fourth .second-form,
+  .social-media {
+    margin: auto;
+  }
+
+  input[type="email"] {
+    margin-top: 13px;
+    padding: 18px;
+    width: 800px;
+  }
+
+  .second-form label {
+    font-size: 12px;
+    max-width: 75ch;
+  }
+
+  .fourth-button {
+    width: 800px;
+  }
+
+  .fourth {
+    height: 880px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    margin: 0px 176px;
+  }
+}
